@@ -7,5 +7,4 @@ def setup():
 
 if __name__ == "__main__":
     setup()
-    subprocess.run(["poetry", "shell"], check=True)
-    subprocess.run(["streamlit", "run", "knowledge_gpt/main.py"])
+    subprocess.run(["poetry", "run", "streamlit", "run", "knowledge_gpt/main.py"])
