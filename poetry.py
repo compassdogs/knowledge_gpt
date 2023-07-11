@@ -5,4 +5,4 @@ def setup():
 
 if __name__ == "__main__":
     setup()
-    subprocess.run(["streamlit", "run", "knowledgebase/main.py"])
+    subprocess.run(["streamlit", "run", "knowledge_gpt/main.py"])
