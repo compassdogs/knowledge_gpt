@@ -1,11 +1,8 @@
-# app.py
-
 import subprocess
-import sys
 
 def setup():
-    subprocess.run([sys.executable, "-m", "knowledge_gpt.main"])
+    subprocess.run(["poetry", "install"], check=True)
 
 if __name__ == "__main__":
     setup()
-
+    subprocess.run(["streamlit", "run", "knowledgebase/main.py"])
